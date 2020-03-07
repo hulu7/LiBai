@@ -1,2 +1,14 @@
 include ':app'
+include ':SlidingMenu_library'
+include ':xutils'
+include ':ViewPagerIndicator_library'
+include ':PullToRefresh_library'
+include ':pullToRefreshListFragment'
+include ':pullToRefreshViewPager'
+project(':SlidingMenu_library').projectDir = new File("lib\\SlidingMenu_library")
+project(':xutils').projectDir = new File("lib\\xutils")
+project(':ViewPagerIndicator_library').projectDir = new File("lib\\ViewPagerIndicator_library")
+project(':PullToRefresh_library').projectDir = new File("lib\\PullToRefresh_library")
+project(':pullToRefreshListFragment').projectDir = new File("lib\\pullToRefreshListFragment")
+project(':pullToRefreshViewPager').projectDir = new File("lib\\pullToRefreshViewPager")
 rootProject.name='LiBai'

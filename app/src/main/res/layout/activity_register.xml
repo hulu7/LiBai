@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/my_edit_text"
+            android:hint="请输入手机号"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/my_edit_text"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:hint="请输入密码"/>
+
+        <EditText
+            android:id="@+id/et_confirm_password"
+            style="@style/my_edit_text"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:hint="请输入确认密码"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_blue"
+                android:text="注册"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_bg_orange"
+                android:text="重置"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

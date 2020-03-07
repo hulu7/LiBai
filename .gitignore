@@ -6,3 +6,11 @@
 /captures
 .externalNativeBuild
 .cxx
+/ViewPagerIndicator_library/build
+/SlidingMenu_library/build
+/app/release/
+/lib/PullToRefresh_library/build
+/lib/pullToRefreshViewPager/build
+/lib/pullToRefreshListFragment/build
+/lib/ViewPagerIndicator_library/build
+/lib/SlidingMenu_library/build

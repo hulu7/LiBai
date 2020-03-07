@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.example.libai.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <RadioGroup
+        android:visibility="gone"
+        android:id="@+id/rg_main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/bottom_tag_style"
+            android:text="主页"
+            android:drawableTop="@drawable/rb_home_drawable_selector"/>
+0
+        <RadioButton
+            android:id="@+id/rb_find"
+            style="@style/bottom_tag_style"
+            android:text="发现"
+            android:drawableTop="@drawable/rb_find_drawable_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/bottom_tag_style"
+            android:text="我的"
+            android:drawableTop="@drawable/rb_my_drawable_selector"/>
+
+    </RadioGroup>
+
+</LinearLayout>

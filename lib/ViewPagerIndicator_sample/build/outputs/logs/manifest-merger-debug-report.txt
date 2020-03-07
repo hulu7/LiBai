@@ -1,0 +1,362 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:2:1-298:12
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:2:1-298:12
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:2:1-298:12
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:2:1-298:12
+MERGED from [:ViewPagerIndicator_library] C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_library\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\d731537eafa87724bd04b22b114e4166\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\8509eb8dbf4fa81e4df7aebc09e38370\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\07ac8697d5a28deb2030ee78033822b6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1eb8878349d4398bd164d5f89e59799a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\a2ef54d9e28fa31d2dce44c12473315a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\2175bad86e4405eb5b3cf9d6fda5fd0c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\329edee13f3eeaf0a84ac3c0ee22893c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\8d3b2e6a7de7adf6696183929e546ccb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\39f197b5203645280f1f24e22492e8d3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\9c0cb0a2b61566c0d5dbd53d120b7b2f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\214785c0ef0e7df871a5173250207752\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\a477ddf256790f3581aaecc247060745\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\82430a07479b402413888bbbbfb43d41\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\32c1744c2b0b21899ebe1850cc79f2c2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\4e567443646da6233322bc0e7cff12eb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\8a2d71ed9699d81dc276b059e0d3dbff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\c87c66704b052c0ad8656a29cd944321\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1fe9e4882f6762f4ab51101ef955dd6c\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\c86d616d4e6bf7a93fd10f1c48e3fd25\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\3ec96fb2d49d3fb9122c0699448ea9d2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\6b91d38c2a3835cf9992fe1c2b71c8a5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\337883b2d54d3d700787470689eb82a1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\53e962a5163408d8f2f8d2665d5feade\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\354b7cc113459147d1769b065017312a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\28c597595fa40bb230ac11cd62dba0ef\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\5392cfe0ad946d7add562b38785e1906\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\009439cecbbb3c58bae299a760a9d94b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1432b012bd064cd5c5e1e00f526e09c7\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:2:1-298:12
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:2:1-298:12
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:2:1-298:12
+	package
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:5:5-32
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:4:5-29
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+application
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:11:5-297:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\c87c66704b052c0ad8656a29cd944321\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\c87c66704b052c0ad8656a29cd944321\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1fe9e4882f6762f4ab51101ef955dd6c\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1fe9e4882f6762f4ab51101ef955dd6c\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\c87c66704b052c0ad8656a29cd944321\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:12:9-50
+	android:icon
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:13:9-38
+activity#com.viewpagerindicator.sample.ListSamples
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:15:9-23:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:17:13-48
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:16:13-40
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:21:27-74
+activity#com.viewpagerindicator.sample.SampleCirclesDefault
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:28:9-35:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:30:13-44
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:29:13-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:com.jakewharton.android.viewpagerindicator.sample.SAMPLE
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:31:13-34:29
+category#com.jakewharton.android.viewpagerindicator.sample.SAMPLE
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:33:17-101
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:33:27-98
+activity#com.viewpagerindicator.sample.SampleCirclesInitialPage
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:36:9-43:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:37:13-53
+activity#com.viewpagerindicator.sample.SampleCirclesSnap
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:44:9-51:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:46:13-41
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:45:13-46
+activity#com.viewpagerindicator.sample.SampleCirclesStyledLayout
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:52:9-60:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:54:13-56
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:55:13-55
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:53:13-54
+activity#com.viewpagerindicator.sample.SampleCirclesStyledMethods
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:61:9-69:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:63:13-57
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:64:13-55
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:62:13-55
+activity#com.viewpagerindicator.sample.SampleCirclesStyledTheme
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:70:9-78:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:72:13-55
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:73:13-52
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:71:13-53
+activity#com.viewpagerindicator.sample.SampleCirclesWithListener
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:79:9-86:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:81:13-50
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:80:13-54
+activity#com.viewpagerindicator.sample.SampleIconsDefault
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:91:9-98:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:93:13-42
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:92:13-47
+activity#com.viewpagerindicator.sample.SampleLinesDefault
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:104:9-111:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:106:17-46
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:105:17-51
+activity#com.viewpagerindicator.sample.SampleLinesStyledLayout
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:112:9-120:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:114:17-58
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:115:17-59
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:113:17-56
+activity#com.viewpagerindicator.sample.SampleLinesStyledMethods
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:121:9-129:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:123:17-59
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:124:17-59
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:122:17-57
+activity#com.viewpagerindicator.sample.SampleLinesStyledTheme
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:130:9-138:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:132:17-57
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:133:17-56
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:131:17-55
+activity#com.viewpagerindicator.sample.SampleTitlesBottom
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:143:9-150:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:145:13-52
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:144:13-47
+activity#com.viewpagerindicator.sample.SampleTitlesCenterClickListener
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:151:9-158:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:153:13-57
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:152:13-60
+activity#com.viewpagerindicator.sample.SampleTitlesDefault
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:159:9-166:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:161:13-43
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:160:13-48
+activity#com.viewpagerindicator.sample.SampleTitlesInitialPage
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:167:9-174:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:169:13-48
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:168:13-52
+activity#com.viewpagerindicator.sample.SampleTitlesStyledLayout
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:175:9-183:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:177:13-55
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:178:13-55
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:176:13-53
+activity#com.viewpagerindicator.sample.SampleTitlesStyledMethods
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:184:9-192:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:186:13-56
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:187:13-55
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:185:13-54
+activity#com.viewpagerindicator.sample.SampleTitlesStyledTheme
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:193:9-201:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:195:13-54
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:196:13-52
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:194:13-52
+activity#com.viewpagerindicator.sample.SampleTitlesTriangle
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:202:9-209:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:204:13-50
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:203:13-49
+activity#com.viewpagerindicator.sample.SampleTitlesWithListener
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:210:9-217:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:212:13-49
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:211:13-53
+activity#com.viewpagerindicator.sample.SampleTabsDefault
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:222:9-230:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:224:13-41
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:225:13-63
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:223:13-46
+activity#com.viewpagerindicator.sample.SampleTabsStyled
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:231:9-239:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:233:13-40
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:234:13-52
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:232:13-45
+activity#com.viewpagerindicator.sample.SampleTabsWithIcons
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:240:7-248:18
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:242:11-42
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:243:11-50
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:241:11-46
+activity#com.viewpagerindicator.sample.SampleUnderlinesDefault
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:253:9-260:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:255:17-51
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:254:17-56
+activity#com.viewpagerindicator.sample.SampleUnderlinesNoFade
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:261:9-268:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:263:17-51
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:262:17-55
+activity#com.viewpagerindicator.sample.SampleUnderlinesStyledLayout
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:269:9-277:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:271:17-63
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:272:17-59
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:270:17-61
+activity#com.viewpagerindicator.sample.SampleUnderlinesStyledMethods
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:278:9-286:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:280:17-64
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:281:17-59
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:279:17-62
+activity#com.viewpagerindicator.sample.SampleUnderlinesStyledTheme
+ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:287:9-295:20
+	android:label
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:289:17-62
+	android:theme
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:290:17-56
+	android:name
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml:288:17-60
+uses-sdk
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+MERGED from [:ViewPagerIndicator_library] C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_library\build\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [:ViewPagerIndicator_library] C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_library\build\intermediates\library_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\d731537eafa87724bd04b22b114e4166\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\d731537eafa87724bd04b22b114e4166\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\8509eb8dbf4fa81e4df7aebc09e38370\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\8509eb8dbf4fa81e4df7aebc09e38370\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\07ac8697d5a28deb2030ee78033822b6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\07ac8697d5a28deb2030ee78033822b6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1eb8878349d4398bd164d5f89e59799a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1eb8878349d4398bd164d5f89e59799a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\a2ef54d9e28fa31d2dce44c12473315a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\a2ef54d9e28fa31d2dce44c12473315a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\2175bad86e4405eb5b3cf9d6fda5fd0c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\2175bad86e4405eb5b3cf9d6fda5fd0c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\329edee13f3eeaf0a84ac3c0ee22893c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\329edee13f3eeaf0a84ac3c0ee22893c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\8d3b2e6a7de7adf6696183929e546ccb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\8d3b2e6a7de7adf6696183929e546ccb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\39f197b5203645280f1f24e22492e8d3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\39f197b5203645280f1f24e22492e8d3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\9c0cb0a2b61566c0d5dbd53d120b7b2f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\9c0cb0a2b61566c0d5dbd53d120b7b2f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\214785c0ef0e7df871a5173250207752\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\214785c0ef0e7df871a5173250207752\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\a477ddf256790f3581aaecc247060745\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\a477ddf256790f3581aaecc247060745\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\82430a07479b402413888bbbbfb43d41\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\82430a07479b402413888bbbbfb43d41\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\32c1744c2b0b21899ebe1850cc79f2c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\32c1744c2b0b21899ebe1850cc79f2c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\4e567443646da6233322bc0e7cff12eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\4e567443646da6233322bc0e7cff12eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\8a2d71ed9699d81dc276b059e0d3dbff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\8a2d71ed9699d81dc276b059e0d3dbff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\c87c66704b052c0ad8656a29cd944321\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\c87c66704b052c0ad8656a29cd944321\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1fe9e4882f6762f4ab51101ef955dd6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1fe9e4882f6762f4ab51101ef955dd6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\c86d616d4e6bf7a93fd10f1c48e3fd25\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\c86d616d4e6bf7a93fd10f1c48e3fd25\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\3ec96fb2d49d3fb9122c0699448ea9d2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\3ec96fb2d49d3fb9122c0699448ea9d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\6b91d38c2a3835cf9992fe1c2b71c8a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\6b91d38c2a3835cf9992fe1c2b71c8a5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\337883b2d54d3d700787470689eb82a1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\337883b2d54d3d700787470689eb82a1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\53e962a5163408d8f2f8d2665d5feade\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\53e962a5163408d8f2f8d2665d5feade\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\354b7cc113459147d1769b065017312a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\354b7cc113459147d1769b065017312a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\28c597595fa40bb230ac11cd62dba0ef\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\28c597595fa40bb230ac11cd62dba0ef\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\5392cfe0ad946d7add562b38785e1906\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\5392cfe0ad946d7add562b38785e1906\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\009439cecbbb3c58bae299a760a9d94b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\009439cecbbb3c58bae299a760a9d94b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1432b012bd064cd5c5e1e00f526e09c7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Lin\.gradle\caches\transforms-2\files-2.1\1432b012bd064cd5c5e1e00f526e09c7\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Lin\Desktop\AndroidStudioProjects\News\ViewPagerIndicator_sample\src\main\AndroidManifest.xml
