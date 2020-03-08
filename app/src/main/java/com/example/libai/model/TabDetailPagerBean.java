@@ -131,9 +131,9 @@ public class TabDetailPagerBean {
             private List<String> recommend;
             private String title;
             private String _id;
-            private String thumbnail_pic_s;
-            private String thumbnail_pic_s02;
-            private String thumbnail_pic_s03;
+//            private String thumbnail_pic_s;
+//            private String thumbnail_pic_s02;
+//            private String thumbnail_pic_s03;
 
             public String getArticleBrief() {
                 return articleBrief;
@@ -287,41 +287,41 @@ public class TabDetailPagerBean {
                 this._id = _id;
             }
 
-            public String getThumbnail_pic_s() {
-                this.thumbnail_pic_s = null;
-                this.thumbnail_pic_s02 = null;
-                this.thumbnail_pic_s03 = null;
-                String[] pics = this.articleCover.split("\\,");
-                if (pics.length < 3 && !pics[0].isEmpty()) {
-                    this.thumbnail_pic_s = pics[0];
-                }
-                if (pics.length >= 3) {
-                    this.thumbnail_pic_s = pics[0];
-                    this.thumbnail_pic_s02 = pics[1];
-                    this.thumbnail_pic_s03 = pics[2];
-                }
-                return this.thumbnail_pic_s;
-            }
-
-            public void setThumbnail_pic_s(String thumbnail_pic_s) {
-                this.thumbnail_pic_s = thumbnail_pic_s;
-            }
-
-            public String getThumbnail_pic_s02() {
-                return this.thumbnail_pic_s02;
-            }
-
-            public void setThumbnail_pic_s02(String thumbnail_pic_s02) {
-                this.thumbnail_pic_s02 = thumbnail_pic_s02;
-            }
-
-            public String getThumbnail_pic_s03() {
-                return this.thumbnail_pic_s03;
-            }
-
-            public void setThumbnail_pic_s03(String thumbnail_pic_s03) {
-                this.thumbnail_pic_s03 = thumbnail_pic_s03;
-            }
+//            public String getThumbnail_pic_s() {
+//                this.thumbnail_pic_s = null;
+//                this.thumbnail_pic_s02 = null;
+//                this.thumbnail_pic_s03 = null;
+//                String[] pics = this.articleCover.split("\\,");
+//                if (pics.length < 3 && !pics[0].isEmpty()) {
+//                    this.thumbnail_pic_s = pics[0];
+//                }
+//                if (pics.length >= 3) {
+//                    this.thumbnail_pic_s = pics[0];
+//                    this.thumbnail_pic_s02 = pics[1];
+//                    this.thumbnail_pic_s03 = pics[2];
+//                }
+//                return this.thumbnail_pic_s;
+//            }
+//
+//            public void setThumbnail_pic_s(String thumbnail_pic_s) {
+//                this.thumbnail_pic_s = thumbnail_pic_s;
+//            }
+//
+//            public String getThumbnail_pic_s02() {
+//                return this.thumbnail_pic_s02;
+//            }
+//
+//            public void setThumbnail_pic_s02(String thumbnail_pic_s02) {
+//                this.thumbnail_pic_s02 = thumbnail_pic_s02;
+//            }
+//
+//            public String getThumbnail_pic_s03() {
+//                return this.thumbnail_pic_s03;
+//            }
+//
+//            public void setThumbnail_pic_s03(String thumbnail_pic_s03) {
+//                this.thumbnail_pic_s03 = thumbnail_pic_s03;
+//            }
         }
     }
 }
