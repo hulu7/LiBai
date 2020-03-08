@@ -15,11 +15,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.example.libai.R;
 import com.example.libai.databases.CollectionDao;
-import com.example.libai.databases.CommentDao;
 import com.example.libai.databases.DatabaseHelper;
-import com.example.libai.fragment.ListBottomSheetDialogFragment;
 import com.example.libai.model.Collection;
-import com.example.libai.model.Comment;
 import com.example.libai.utils.CacheUtils;
 
 public class NewsDetailActivity extends AppCompatActivity {
@@ -38,12 +35,6 @@ public class NewsDetailActivity extends AppCompatActivity {
     WebView webview;
     @BindView(R.id.pb_loading)
     ProgressBar pbLoading;
-    @BindView(R.id.tv_comment)
-    TextView tvComment;
-    @BindView(R.id.et_content)
-    EditText etContent;
-    @BindView(R.id.btn_send)
-    Button btnSend;
     private String url;
     private String title;
     private WebSettings webSettings;
@@ -80,48 +71,6 @@ public class NewsDetailActivity extends AppCompatActivity {
             }
         });
         webview.loadUrl(url);
-
-        //弹出评论页面
-        tvComment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ListBottomSheetDialogFragment dialogFragment = new ListBottomSheetDialogFragment();
-                Bundle bundle = new Bundle();
-                bundle.putString(DatabaseHelper.UNIQUEKEY,uniquekey);
-                dialogFragment.setArguments(bundle);
-                dialogFragment.show(getSupportFragmentManager(),"dialog");
-            }
-        });
-
-        //发送评论内容
-        btnSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                content = etContent.getText().toString();
-                CacheUtils cacheUtils = new CacheUtils();
-                String phone = cacheUtils.getString(NewsDetailActivity.this,DatabaseHelper.PHONE);
-                if (phone.equals("")){
-                    Toast.makeText(NewsDetailActivity.this, "请先登录！", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(NewsDetailActivity.this,LoginActivity.class));
-                    return;
-                }else if (content.equals("")){
-                    Toast.makeText(NewsDetailActivity.this, "发送内容不能为空！", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                String time = String.valueOf(System.currentTimeMillis());
-                Comment comment = new Comment(phone,content,time,uniquekey);
-                CommentDao commentDao = new CommentDao(NewsDetailActivity.this);
-                if (commentDao.add(comment)){
-                    etContent.setText("");
-                    Toast.makeText(NewsDetailActivity.this, "评论成功", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(NewsDetailActivity.this, "评论失败！", Toast.LENGTH_SHORT).show();
-                }
-
-            }
-        });
-
     }
 
     private void initView() {
