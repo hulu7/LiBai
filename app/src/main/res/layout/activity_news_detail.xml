@@ -28,36 +28,36 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
 
-        <EditText
-            android:id="@+id/et_content"
-            android:hint="抢沙发!"
-            android:layout_weight="1"
-            style="@style/my_edit_text"/>
+<!--        <EditText-->
+<!--            android:id="@+id/et_content"-->
+<!--            android:hint="抢沙发!"-->
+<!--            android:layout_weight="1"-->
+<!--            style="@style/my_edit_text"/>-->
 
-        <Button
-            android:id="@+id/btn_send"
-            android:text="发送"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/btn_bg_blue"
-            android:textColor="@android:color/white"
-            android:layout_width="60dp"
-            android:layout_height="40dp"/>
+<!--        <Button-->
+<!--            android:id="@+id/btn_send"-->
+<!--            android:text="发送"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:background="@drawable/btn_bg_blue"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="40dp"/>-->
 
-        <TextView
-            android:id="@+id/tv_comment"
-            android:text="评论"
-            android:gravity="center"
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_comment"-->
+<!--            android:text="评论"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"/>-->
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 </LinearLayout>

@@ -57,7 +57,7 @@ public class HomePager extends BasePager {
                 viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
             }
         });
-        tvTitle.setText("深度资讯");
+        tvTitle.setText("");
         flContent.removeAllViews();
         flContent.addView(view);
 //        LogUtil.e("主页被初始化了。。。");
@@ -88,16 +88,12 @@ public class HomePager extends BasePager {
 
     private void AddData() {
         titles = new ArrayList<>();
-        titles.add("头条");
-        titles.add("社会");
-        titles.add("国内");
-        titles.add("国际");
-        titles.add("娱乐");
-        titles.add("体育");
-        titles.add("军事");
+        titles.add("最新");
         titles.add("科技");
         titles.add("财经");
-        titles.add("时尚");
+        titles.add("房产");
+        titles.add("汽车");
+        titles.add("文化");
     }
 
     class MyOnPageChangeListener implements ViewPager.OnPageChangeListener {

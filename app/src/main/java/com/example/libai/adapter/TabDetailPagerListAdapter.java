@@ -69,6 +69,7 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
 
     @Override
     public int getItemViewType(int position) {
+        news.get(position).getThumbnail_pic_s();
         if (news.get(position).getThumbnail_pic_s() != null &&
                 news.get(position).getThumbnail_pic_s02() != null &&
                 news.get(position).getThumbnail_pic_s03() != null) {
@@ -110,7 +111,7 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
 
             //获取数据重新赋值
             holder01.tv_title.setText(dataBean.getTitle());
-            holder01.tv_author.setText(dataBean.getAuthor_name());
+            holder01.tv_author.setText(dataBean.getAuthor());
 
             //请求图片
             String imageUrl01 = dataBean.getThumbnail_pic_s();

@@ -80,7 +80,7 @@ public class CollectionActivity extends AppCompatActivity {
             String uniquekey = collections.get(i).getUniquekey();
             dataBean = new TabDetailPagerBean.ResultBean.DataBean();
             dataBean.setTitle(title);
-            dataBean.setUrl(url);
+            dataBean.setForceUrl(url);
             dataBean.setUniquekey(uniquekey);
             data.add(dataBean);
         }
@@ -101,7 +101,7 @@ public class CollectionActivity extends AppCompatActivity {
             public void onItemClick(View v, int position) {
                 //跳转到新闻浏览页面
                 Intent intent = new Intent(CollectionActivity.this, NewsDetailActivity.class);
-                intent.putExtra(DatabaseHelper.URL, data.get(position).getUrl());
+                intent.putExtra(DatabaseHelper.URL, data.get(position).getForceUrl());
                 intent.putExtra(DatabaseHelper.TITLE, data.get(position).getTitle());
                 intent.putExtra(DatabaseHelper.UNIQUEKEY, data.get(position).getUniquekey());
                 startActivity(intent);

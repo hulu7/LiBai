@@ -1,11 +1,13 @@
 package com.example.libai.utils;
 
 public class Constants {
-
-    public static final String NEWS_URL = "url";
-
-    public static String getUrl(String title){
-        String url = "http://v.juhe.cn/toutiao/index?type="+ title +"&key=5e4b452d5e7749493dec7a9ced8edc3a";
+    public static String getUrl(String category, Integer page, Integer limit){
+        String url = "https://www.deepinews.com/api/article/getArticle?page=" +
+                page +
+                "&limit=" +
+                limit +
+                "&catalog=" +
+                category;
         return url;
     }
 

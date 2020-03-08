@@ -38,12 +38,12 @@ public class NewsDetailActivity extends AppCompatActivity {
     WebView webview;
     @BindView(R.id.pb_loading)
     ProgressBar pbLoading;
-    @BindView(R.id.tv_comment)
-    TextView tvComment;
-    @BindView(R.id.et_content)
-    EditText etContent;
-    @BindView(R.id.btn_send)
-    Button btnSend;
+//    @BindView(R.id.tv_comment)
+//    TextView tvComment;
+//    @BindView(R.id.et_content)
+//    EditText etContent;
+//    @BindView(R.id.btn_send)
+//    Button btnSend;
     private String url;
     private String title;
     private WebSettings webSettings;
@@ -82,45 +82,45 @@ public class NewsDetailActivity extends AppCompatActivity {
         webview.loadUrl(url);
 
         //弹出评论页面
-        tvComment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ListBottomSheetDialogFragment dialogFragment = new ListBottomSheetDialogFragment();
-                Bundle bundle = new Bundle();
-                bundle.putString(DatabaseHelper.UNIQUEKEY,uniquekey);
-                dialogFragment.setArguments(bundle);
-                dialogFragment.show(getSupportFragmentManager(),"dialog");
-            }
-        });
+//        tvComment.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ListBottomSheetDialogFragment dialogFragment = new ListBottomSheetDialogFragment();
+//                Bundle bundle = new Bundle();
+//                bundle.putString(DatabaseHelper.UNIQUEKEY,uniquekey);
+//                dialogFragment.setArguments(bundle);
+//                dialogFragment.show(getSupportFragmentManager(),"dialog");
+//            }
+//        });
 
         //发送评论内容
-        btnSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                content = etContent.getText().toString();
-                CacheUtils cacheUtils = new CacheUtils();
-                String phone = cacheUtils.getString(NewsDetailActivity.this,DatabaseHelper.PHONE);
-                if (phone.equals("")){
-                    Toast.makeText(NewsDetailActivity.this, "请先登录！", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(NewsDetailActivity.this,LoginActivity.class));
-                    return;
-                }else if (content.equals("")){
-                    Toast.makeText(NewsDetailActivity.this, "发送内容不能为空！", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                String time = String.valueOf(System.currentTimeMillis());
-                Comment comment = new Comment(phone,content,time,uniquekey);
-                CommentDao commentDao = new CommentDao(NewsDetailActivity.this);
-                if (commentDao.add(comment)){
-                    etContent.setText("");
-                    Toast.makeText(NewsDetailActivity.this, "评论成功", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(NewsDetailActivity.this, "评论失败！", Toast.LENGTH_SHORT).show();
-                }
-
-            }
-        });
+//        btnSend.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                content = etContent.getText().toString();
+//                CacheUtils cacheUtils = new CacheUtils();
+//                String phone = cacheUtils.getString(NewsDetailActivity.this,DatabaseHelper.PHONE);
+//                if (phone.equals("")){
+//                    Toast.makeText(NewsDetailActivity.this, "请先登录！", Toast.LENGTH_SHORT).show();
+//                    startActivity(new Intent(NewsDetailActivity.this,LoginActivity.class));
+//                    return;
+//                }else if (content.equals("")){
+//                    Toast.makeText(NewsDetailActivity.this, "发送内容不能为空！", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//
+//                String time = String.valueOf(System.currentTimeMillis());
+//                Comment comment = new Comment(phone,content,time,uniquekey);
+//                CommentDao commentDao = new CommentDao(NewsDetailActivity.this);
+//                if (commentDao.add(comment)){
+//                    etContent.setText("");
+//                    Toast.makeText(NewsDetailActivity.this, "评论成功", Toast.LENGTH_SHORT).show();
+//                }else{
+//                    Toast.makeText(NewsDetailActivity.this, "评论失败！", Toast.LENGTH_SHORT).show();
+//                }
+//
+//            }
+//        });
 
     }
 
@@ -143,7 +143,6 @@ public class NewsDetailActivity extends AppCompatActivity {
                 ibCollection.setImageResource(R.drawable.collection);
             }
         }
-
     }
 
     @OnClick({R.id.ib_back, R.id.ib_fontsize, R.id.ib_collection})

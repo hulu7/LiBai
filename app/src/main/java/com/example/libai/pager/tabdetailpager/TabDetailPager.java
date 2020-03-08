@@ -30,7 +30,7 @@ public class TabDetailPager extends MenuDetailBasePager {
     public static final String READ_ARRAY_ID = "read_array_id";
     private String title;
     private String url;
-    private String data;
+    private String category;
     private ListView listView;
     private TabDetailPagerListAdapter adapter;
 
@@ -100,7 +100,7 @@ public class TabDetailPager extends MenuDetailBasePager {
 
             //跳转到新闻浏览页面
             Intent intent = new Intent(context, NewsDetailActivity.class);
-            intent.putExtra(DatabaseHelper.URL, newsData.getUrl());
+            intent.putExtra(DatabaseHelper.URL, newsData.getForceUrl());
             intent.putExtra(DatabaseHelper.TITLE, newsData.getTitle());
             intent.putExtra(DatabaseHelper.UNIQUEKEY,newsData.getUniquekey());
             context.startActivity(intent);
@@ -111,29 +111,20 @@ public class TabDetailPager extends MenuDetailBasePager {
     @Override
     public void initData() {
         super.initData();
-//        LogUtil.e("TabDetailPager加载。。。");
-        if (title.equals("头条")) {
-            data = "top";
-        } else if (title.equals("社会")) {
-            data = "shehui";
-        } else if (title.equals("国内")) {
-            data = "guonei";
-        } else if (title.equals("国际")) {
-            data = "guoji";
-        } else if (title.equals("娱乐")) {
-            data = "yule";
-        } else if (title.equals("体育")) {
-            data = "tiyu";
-        } else if (title.equals("军事")) {
-            data = "junshi";
+        if (title.equals("最新")) {
+            category = "all";
         } else if (title.equals("科技")) {
-            data = "keji";
-        } else if (title.equals("财经")) {
-            data = "caijing";
-        } else if (title.equals("时尚")) {
-            data = "shishang";
+            category = "tech";
+        }else if (title.equals("财经")) {
+            category = "finance";
+        } else if (title.equals("房产")) {
+            category = "house";
+        } else if (title.equals("汽车")) {
+            category = "car";
+        } else if (title.equals("文化")) {
+            category = "culture";
         }
-        url = Constants.getUrl(data);
+        url = Constants.getUrl(category, 0, 10);
         //把之前缓存的数据取出
         String saveJson = CacheUtils.getString(context, url);
 //        LogUtil.e("json数据+++"+saveJson);

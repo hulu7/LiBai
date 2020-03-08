@@ -43,7 +43,7 @@ public class MainActivity extends SlidingFragmentActivity {
 
         //5.设置滑动模式：滑动边缘，全屏滑动，不可滑动
         slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
-        slidingMenu.setOffsetFadeDegree(0.4f);
+        slidingMenu.setOffsetFadeDegree(0.1f);
 
         //6.设置主页占据的宽度
         slidingMenu.setBehindOffset(DensityUtil.dip2px(MainActivity.this,150));
