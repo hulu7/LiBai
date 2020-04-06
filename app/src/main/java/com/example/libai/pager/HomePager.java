@@ -102,7 +102,6 @@ public class HomePager extends BasePager {
 
         @Override
         public void onPageScrolled(int i, float v, int i1) {
-            int k = 1;
             isEnableSlidingMenu(SlidingMenu.TOUCHMODE_NONE);
         }
 
