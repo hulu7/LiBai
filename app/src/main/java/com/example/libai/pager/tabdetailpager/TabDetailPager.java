@@ -18,7 +18,6 @@ import com.example.libai.utils.LogUtil;
 import com.google.gson.Gson;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.handmark.pulltorefresh.library.extras.SoundPullEventListener;
 import org.xutils.common.Callback;
 import org.xutils.http.RequestParams;
 import org.xutils.x;
@@ -33,11 +32,15 @@ public class TabDetailPager extends MenuDetailBasePager {
     private String category;
     private ListView listView;
     private TabDetailPagerListAdapter adapter;
+    private int currentPage = 0;
+    private int pageSize = 10;
+    private boolean isPullUp = false;
+    private int currentPosition = 0;
 
     /**
      * 新闻列表数据集合
      */
-    private List<TabDetailPagerBean.ResultBean.DataBean> news;
+    private List<TabDetailPagerBean.ResultBean.DataBean> pageCache;
     private PullToRefreshListView mPullRefreshListView;
 
     public TabDetailPager(Context context, String title) {
@@ -50,22 +53,23 @@ public class TabDetailPager extends MenuDetailBasePager {
         View view = View.inflate(context, R.layout.tab_detail_pager, null);
 
         mPullRefreshListView = view.findViewById(R.id.pull_refresh_list);
-
+        mPullRefreshListView.setMode(PullToRefreshBase.Mode.BOTH);
         listView = mPullRefreshListView.getRefreshableView();
 
-        /**
-         * Add Sound Event Listener
-         */
-//        SoundPullEventListener<ListView> soundListener = new SoundPullEventListener<ListView>(context);
-//        soundListener.addSoundEvent(PullToRefreshBase.State.PULL_TO_REFRESH, R.raw.pull_event);
-//        soundListener.addSoundEvent(PullToRefreshBase.State.RESET, R.raw.reset_sound);
-//        soundListener.addSoundEvent(PullToRefreshBase.State.REFRESHING, R.raw.refreshing_sound);
-//        mPullRefreshListView.setOnPullEventListener(soundListener);
-
-        mPullRefreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
+        mPullRefreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
             @Override
-            public void onRefresh(PullToRefreshBase<ListView> refreshView) {
-                getDataFromNet();
+            public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
+                isPullUp = false;
+                currentPage = 0;
+                getDataPullRefresh();
+            }
+
+            @Override
+            public void onPullUpToRefresh(PullToRefreshBase<ListView> refreshView) {
+                isPullUp = true;
+                currentPage += 1;
+                url = Constants.getUrl(category, currentPage, pageSize);
+                getDataPullRefresh();
             }
         });
 
@@ -81,7 +85,7 @@ public class TabDetailPager extends MenuDetailBasePager {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
             int realPosition = position-1;
-            TabDetailPagerBean.ResultBean.DataBean newsData = news.get(realPosition);
+            TabDetailPagerBean.ResultBean.DataBean newsData = pageCache.get(realPosition);
 //            Toast.makeText(context, "uniquekey=="+newsData.getUniquekey()+newsData.getTitle(), Toast.LENGTH_SHORT).show();
 
 //            LogUtil.e(newsData.getTitle()+"的新闻地址："+newsData.getUrl());
@@ -115,7 +119,7 @@ public class TabDetailPager extends MenuDetailBasePager {
             category = "all";
         } else if (title.equals("科技")) {
             category = "tech";
-        }else if (title.equals("财经")) {
+        } else if (title.equals("财经")) {
             category = "finance";
         } else if (title.equals("房产")) {
             category = "house";
@@ -124,7 +128,8 @@ public class TabDetailPager extends MenuDetailBasePager {
         } else if (title.equals("文化")) {
             category = "culture";
         }
-        url = Constants.getUrl(category, 0, 10);
+        currentPage = 0;
+        url = Constants.getUrl(category, currentPage, pageSize);
         //把之前缓存的数据取出
         String saveJson = CacheUtils.getString(context, url);
 //        LogUtil.e("json数据+++"+saveJson);
@@ -134,14 +139,13 @@ public class TabDetailPager extends MenuDetailBasePager {
         }
 //        LogUtil.e(title + "的联网地址==" + url);
         //联网请求数据
-        getDataFromNet();
-
+        getDataPullRefresh();
     }
 
     /**
      * 使用xUtils3联网请求数据
      */
-    private void getDataFromNet() {
+    private void getDataPullRefresh() {
         RequestParams params = new RequestParams(url);
         params.setConnectTimeout(4000);
         x.http().get(params, new Callback.CommonCallback<String>() {
@@ -154,14 +158,12 @@ public class TabDetailPager extends MenuDetailBasePager {
                     //解析和处理显示数据
                     processData(result);
                 }
-
                 mPullRefreshListView.onRefreshComplete();
             }
 
             @Override
             public void onError(Throwable ex, boolean isOnCallback) {
                 LogUtil.e(title + "-页面数据请求失败==" + ex.getMessage());
-                
                 mPullRefreshListView.onRefreshComplete();
             }
 
@@ -189,13 +191,27 @@ public class TabDetailPager extends MenuDetailBasePager {
 //        LogUtil.e(title + "解析成功==" + bean.getResult().getData().get(0).getTitle());
 
         //准备ListView对应的集合数据
+        List<TabDetailPagerBean.ResultBean.DataBean> news;
         news = bean.getResult().getData();
+        if (currentPage == 0) {
+            pageCache = news;
+        } else {
+            if (isPullUp) {
+                currentPosition = pageCache.size();
+                pageCache.removeAll(news);
+                pageCache.addAll(news);
+            }
+        }
         //设置ListView的适配器
-        adapter = new TabDetailPagerListAdapter(context,news);
+        adapter = new TabDetailPagerListAdapter(context, pageCache);
         listView.setAdapter(adapter);
 
+        if (currentPage == 0) {
+            listView.setSelection(0);
+        } else {
+            listView.setSelection(currentPosition + 1);
+        }
     }
-
 
     private TabDetailPagerBean parsedJson(String json) {
         return new Gson().fromJson(json, TabDetailPagerBean.class);

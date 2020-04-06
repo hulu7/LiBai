@@ -152,7 +152,6 @@ public class GuideActivity extends AppCompatActivity {
          */
         @Override
         public void onPageScrollStateChanged(int i) {
-
         }
     }
 
@@ -167,6 +166,4 @@ public class GuideActivity extends AppCompatActivity {
             leftmax = llPointGroup.getChildAt(1).getLeft() - llPointGroup.getChildAt(0).getLeft();
         }
     }
-
-
 }

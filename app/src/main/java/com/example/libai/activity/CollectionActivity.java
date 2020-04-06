@@ -63,7 +63,6 @@ public class CollectionActivity extends AppCompatActivity {
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
         //设置布局
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
     }
 
     @Override

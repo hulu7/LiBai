@@ -51,6 +51,8 @@ public class HomePager extends BasePager {
         final View view = View.inflate(context, R.layout.news_menu_detail_pager, null);
         x.view().inject(this, view);
         //设置点击事件
+//        button1.setImageResource(R.drawable.icon1);
+        ibTabNext.setVisibility(View.VISIBLE);
         ibTabNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,7 +102,8 @@ public class HomePager extends BasePager {
 
         @Override
         public void onPageScrolled(int i, float v, int i1) {
-
+            int k = 1;
+            isEnableSlidingMenu(SlidingMenu.TOUCHMODE_NONE);
         }
 
         @Override

@@ -5,12 +5,13 @@
               android:layout_height="match_parent">
 
     <!--标题栏title_bar-->
-    <include layout="@layout/title_bar"/>
 
     <!--各个页面的视图，都是添加到FragmentLayout里面，addView-->
     <FrameLayout
         android:id="@+id/fl_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+        <include layout="@layout/title_bar"/>
+    </FrameLayout>
 
 </LinearLayout>

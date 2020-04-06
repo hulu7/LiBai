@@ -69,15 +69,15 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
 
     @Override
     public int getItemViewType(int position) {
-//        news.get(position).getThumbnail_pic_s();
-//        if (news.get(position).getThumbnail_pic_s() != null &&
-//                news.get(position).getThumbnail_pic_s02() != null &&
-//                news.get(position).getThumbnail_pic_s03() != null) {
-//            return IMAGE_03;
-//        } else if (news.get(position).getThumbnail_pic_s() != null &&
-//                news.get(position).getThumbnail_pic_s02() != null) {
-//            return IMAGE_02;
-//        }
+        news.get(position).getThumbnail_pic_s();
+        if (news.get(position).getThumbnail_pic_s() != null &&
+                news.get(position).getThumbnail_pic_s02() != null &&
+                news.get(position).getThumbnail_pic_s03() != null) {
+            return IMAGE_03;
+        } else if (news.get(position).getThumbnail_pic_s() != null &&
+                news.get(position).getThumbnail_pic_s02() != null) {
+            return IMAGE_02;
+        }
         return IMAGE_01;
     }
 
@@ -114,8 +114,8 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
             holder01.tv_author.setText(dataBean.getAuthor());
 
             //请求图片
-//            String imageUrl01 = dataBean.getThumbnail_pic_s();
-//            x.image().bind(holder01.iv_image01, imageUrl01, imageOptions);
+            String imageUrl01 = dataBean.getThumbnail_pic_s();
+            x.image().bind(holder01.iv_image01, imageUrl01, imageOptions);
 
             if (idArray.contains(dataBean.getUniquekey())){
                 //设置灰色
@@ -143,10 +143,10 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
             holder02.tv_title.setText(dataBean.getTitle());
 
             //请求图片
-//            String imageUrl01 = dataBean.getThumbnail_pic_s();
-//            String imageUrl02 = dataBean.getThumbnail_pic_s02();
-//            x.image().bind(holder02.iv_image01, imageUrl01, imageOptions);
-//            x.image().bind(holder02.iv_image02, imageUrl02, imageOptions);
+            String imageUrl01 = dataBean.getThumbnail_pic_s();
+            String imageUrl02 = dataBean.getThumbnail_pic_s02();
+            x.image().bind(holder02.iv_image01, imageUrl01, imageOptions);
+            x.image().bind(holder02.iv_image02, imageUrl02, imageOptions);
 
             if (idArray.contains(dataBean.getUniquekey())){
                 //设置灰色
@@ -175,12 +175,12 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
             holder03.tv_title.setText(dataBean.getTitle());
 
             //请求图片
-//            String imageUrl01 = dataBean.getThumbnail_pic_s();
-//            String imageUrl02 = dataBean.getThumbnail_pic_s02();
-//            String imageUrl03 = dataBean.getThumbnail_pic_s03();
-//            x.image().bind(holder03.iv_image01, imageUrl01, imageOptions);
-//            x.image().bind(holder03.iv_image02, imageUrl02, imageOptions);
-//            x.image().bind(holder03.iv_image03, imageUrl03, imageOptions);
+            String imageUrl01 = dataBean.getThumbnail_pic_s();
+            String imageUrl02 = dataBean.getThumbnail_pic_s02();
+            String imageUrl03 = dataBean.getThumbnail_pic_s03();
+            x.image().bind(holder03.iv_image01, imageUrl01, imageOptions);
+            x.image().bind(holder03.iv_image02, imageUrl02, imageOptions);
+            x.image().bind(holder03.iv_image03, imageUrl03, imageOptions);
 
             if (idArray.contains(dataBean.getUniquekey())){
                 //设置灰色

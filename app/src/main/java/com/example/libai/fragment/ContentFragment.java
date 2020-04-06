@@ -80,7 +80,6 @@ public class ContentFragment extends BaseFragment {
 
         @Override
         public void onPageScrolled(int i, float v, int i1) {
-
         }
 
         @Override
@@ -90,7 +89,6 @@ public class ContentFragment extends BaseFragment {
 
         @Override
         public void onPageScrollStateChanged(int i) {
-
         }
     }
 
