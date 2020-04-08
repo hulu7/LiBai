@@ -19,23 +19,41 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".activity.InformationActivity">
+        <activity android:name=".activity.InformationActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".activity.ModifyPasswordActivity">
+        <activity android:name=".activity.ModifyPasswordActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".activity.CommentActivity">
+        <activity android:name=".activity.CommentActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".activity.LoginActivity">
+        <activity android:name=".activity.LoginActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".activity.RegisterActivity">
+        <activity android:name=".activity.RegisterActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".activity.CollectionActivity">
+        <activity android:name=".activity.CollectionActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".activity.NewsDetailActivity">
+        <activity android:name=".activity.NewsDetailActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".activity.GuideActivity">
+        <activity android:name=".activity.GuideActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
-        <activity android:name=".StartActivity">
+        <activity android:name=".StartActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -44,7 +62,9 @@
         </activity>
         <activity
                 android:name=".activity.MainActivity"
-                android:theme="@style/Theme.PageIndicatorDefaults">
+                android:theme="@style/Theme.PageIndicatorDefaults"
+                android:screenOrientation="portrait"
+                android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
     </application>
 

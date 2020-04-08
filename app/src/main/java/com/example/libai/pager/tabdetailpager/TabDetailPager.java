@@ -32,7 +32,7 @@ public class TabDetailPager extends MenuDetailBasePager {
     private String category;
     private ListView listView;
     private TabDetailPagerListAdapter adapter;
-    private int currentPage = 0;
+    private int currentPage = 1;
     private int pageSize = 10;
     private boolean isPullUp = false;
     private int currentPosition = 0;
@@ -60,7 +60,8 @@ public class TabDetailPager extends MenuDetailBasePager {
             @Override
             public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
                 isPullUp = false;
-                currentPage = 0;
+                currentPage = 1;
+                url = Constants.getUrl(category, currentPage, pageSize);
                 getDataPullRefresh();
             }
 
@@ -128,7 +129,7 @@ public class TabDetailPager extends MenuDetailBasePager {
         } else if (title.equals("文化")) {
             category = "culture";
         }
-        currentPage = 0;
+        currentPage = 1;
         url = Constants.getUrl(category, currentPage, pageSize);
         //把之前缓存的数据取出
         String saveJson = CacheUtils.getString(context, url);
@@ -193,7 +194,7 @@ public class TabDetailPager extends MenuDetailBasePager {
         //准备ListView对应的集合数据
         List<TabDetailPagerBean.ResultBean.DataBean> news;
         news = bean.getResult().getData();
-        if (currentPage == 0) {
+        if (currentPage == 1) {
             pageCache = news;
         } else {
             if (isPullUp) {
@@ -203,10 +204,10 @@ public class TabDetailPager extends MenuDetailBasePager {
             }
         }
         //设置ListView的适配器
-        adapter = new TabDetailPagerListAdapter(context, pageCache);
+          adapter = new TabDetailPagerListAdapter(context, pageCache);
         listView.setAdapter(adapter);
 
-        if (currentPage == 0) {
+        if (currentPage == 1) {
             listView.setSelection(0);
         } else {
             listView.setSelection(currentPosition + 1);
