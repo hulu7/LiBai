@@ -6,24 +6,24 @@
     android:padding="10dp">
 
     <ImageView
-        android:id="@+id/iv_image01"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentRight="true"
-        android:src="@mipmap/ic_launcher"/>
+            android:id="@+id/iv_image01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_launcher" android:adjustViewBounds="true"/>
 
     <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentLeft="true"
-        android:layout_toLeftOf="@id/iv_image01"
-        android:text="Title"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/iv_image01"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"/>
 
     <TextView
         android:id="@+id/tv_author"
