@@ -104,6 +104,8 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
                 holder01.tv_title = convertView.findViewById(R.id.tv_title);
                 holder01.tv_author = convertView.findViewById(R.id.tv_author);
                 holder01.iv_image01 = convertView.findViewById(R.id.iv_image01);
+                holder01.tv_category = convertView.findViewById(R.id.tv_category);
+                holder01.tv_time = convertView.findViewById(R.id.tv_time);
                 convertView.setTag(holder01);
             } else {
                 holder01 = (Image01_ViewHolder) convertView.getTag();
@@ -112,6 +114,8 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
             //获取数据重新赋值
             holder01.tv_title.setText(dataBean.getTitle());
             holder01.tv_author.setText(dataBean.getAuthor());
+            holder01.tv_category.setText(dataBean.getCatalog().toString());
+            holder01.tv_time.setText(dataBean.getPublished());
 
             //请求图片
             String imageUrl01 = dataBean.getThumbnail_pic_s();
@@ -135,6 +139,8 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
                 holder02.tv_author = convertView.findViewById(R.id.tv_author);
                 holder02.iv_image01 = convertView.findViewById(R.id.iv_image01);
                 holder02.iv_image02 = convertView.findViewById(R.id.iv_image02);
+                holder02.tv_category = convertView.findViewById(R.id.tv_category);
+                holder02.tv_time = convertView.findViewById(R.id.tv_time);
                 convertView.setTag(holder02);
             }else {
                 holder02 = (Image02_ViewHolder) convertView.getTag();
@@ -143,6 +149,8 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
             //获取数据重新赋值
             holder02.tv_title.setText(dataBean.getTitle());
             holder02.tv_author.setText(dataBean.getAuthor());
+            holder02.tv_category.setText(dataBean.getCatalog().toString());
+            holder02.tv_time.setText(dataBean.getPublished());
 
             //请求图片
             String imageUrl01 = dataBean.getThumbnail_pic_s();
@@ -169,6 +177,8 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
                 holder03.iv_image01 = convertView.findViewById(R.id.iv_image01);
                 holder03.iv_image02 = convertView.findViewById(R.id.iv_image02);
                 holder03.iv_image03 = convertView.findViewById(R.id.iv_image03);
+                holder03.tv_category = convertView.findViewById(R.id.tv_category);
+                holder03.tv_time = convertView.findViewById(R.id.tv_time);
                 convertView.setTag(holder03);
             }else {
                 holder03 = (Image03_ViewHolder) convertView.getTag();
@@ -177,6 +187,8 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
             //获取数据重新赋值
             holder03.tv_title.setText(dataBean.getTitle());
             holder03.tv_author.setText(dataBean.getAuthor());
+            holder03.tv_category.setText(dataBean.getCatalog().toString());
+            holder03.tv_time.setText(dataBean.getPublished());
 
             //请求图片
             String imageUrl01 = dataBean.getThumbnail_pic_s();
@@ -201,17 +213,17 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
     }
 
     private class Image01_ViewHolder {
-        TextView tv_title, tv_author;
+        TextView tv_title, tv_author, tv_category, tv_time;
         ImageView iv_image01;
     }
 
     private class Image02_ViewHolder {
-        TextView tv_title, tv_author;
+        TextView tv_title, tv_author, tv_category, tv_time;
         ImageView iv_image01, iv_image02;
     }
 
     private class Image03_ViewHolder {
-        TextView tv_title, tv_author;
+        TextView tv_title, tv_author, tv_category, tv_time;
         ImageView iv_image01, iv_image02, iv_image03;
     }
 
