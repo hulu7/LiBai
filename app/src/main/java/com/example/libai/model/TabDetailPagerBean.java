@@ -1,6 +1,6 @@
 package com.example.libai.model;
 
-import java.io.Serializable;
+import com.example.libai.utils.*;
 import java.util.List;
 
 public class TabDetailPagerBean {
@@ -256,7 +256,7 @@ public class TabDetailPagerBean {
             }
 
             public String getPublished() {
-                return published;
+                return TimeUtil.FormatTime(published);
             }
 
             public void setPublished(String published) {

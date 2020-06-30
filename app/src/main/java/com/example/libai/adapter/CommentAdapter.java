@@ -54,7 +54,7 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
         viewHolder.tvName.setText(user.getName());
         viewHolder.tvContent.setText(list.get(i).getContent());
         LogUtil.e("content"+list.get(i).getContent());
-        viewHolder.tvTime.setText(TimeUtil.QQFormatTime(Long.parseLong(list.get(i).getTime())));
+        viewHolder.tvTime.setText(TimeUtil.CommonFormatTime(Long.parseLong(list.get(i).getTime())));
 //        Glide.with(context).load(user.getPath()).error(R.drawable.portrait).into(viewHolder.ivPortrait);
         if (user.getPath().equals("") || user.getPath() == null){
             viewHolder.ivPortrait.setImageResource(R.drawable.portrait);

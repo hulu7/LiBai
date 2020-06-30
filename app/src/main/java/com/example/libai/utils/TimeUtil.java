@@ -2,19 +2,37 @@ package com.example.libai.utils;
 
 import android.annotation.SuppressLint;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
 public class TimeUtil {
+    public static  String FormatTime(String time) {
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat format =new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+        Date d = null;
+        try {
+            d = format.parse(time);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        c.setTime(d);
+        int year = c.get(Calendar.YEAR);
+        int month = c.get(Calendar.MONTH) + 1;
+        int day = c.get(Calendar.DAY_OF_MONTH);
+        boolean isSameDay = isSameDay(d);
+        return isSameDay? "今天": year + "年" + month + "月" + day + "日";
+    }
+
     /**
-     * 仿QQ，微信聊天时间格式化
+     * 时间格式化
      *
      * @param time 时间戳
      * @return
      */
-    public static String QQFormatTime(long time) {
+    public static String CommonFormatTime(long time) {
         Date date = new Date();
         date.setTime(time);
         if (isSameYear(date)) { //同一年 显示MM-dd HH:mm
