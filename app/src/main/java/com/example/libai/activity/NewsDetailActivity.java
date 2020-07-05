@@ -78,7 +78,7 @@ public class NewsDetailActivity extends AppCompatActivity {
         ibMenu.setVisibility(View.GONE);
         ibBack.setVisibility(View.VISIBLE);
         ibFontsize.setVisibility(View.VISIBLE);
-        ibCollection.setVisibility(View.VISIBLE);
+        ibCollection.setVisibility(View.INVISIBLE);
 
         CacheUtils cacheUtils = new CacheUtils();
         String phone = cacheUtils.getString(this, DatabaseHelper.PHONE);

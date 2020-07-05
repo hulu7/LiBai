@@ -14,6 +14,7 @@ import org.xutils.common.util.DensityUtil;
 import org.xutils.image.ImageOptions;
 import org.xutils.x;
 
+import java.lang.reflect.Array;
 import java.util.List;
 
 import static com.example.libai.pager.tabdetailpager.TabDetailPager.READ_ARRAY_ID;
@@ -36,7 +37,7 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
         this.news = news;
         imageOptions = new ImageOptions.Builder()
                 .setSize(DensityUtil.dip2px(90), DensityUtil.dip2px(90))
-                .setRadius(DensityUtil.dip2px(5))
+                .setRadius(DensityUtil.dip2px(0))
                 // 如果ImageView的大小不是定义为wrap_content, 不要crop.
                 .setCrop(true) // 很多时候设置了合适的scaleType也不需要它.
                 // 加载中或错误图片的ScaleType
@@ -88,6 +89,7 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
         TabDetailPagerBean.ResultBean.DataBean dataBean = news.get(position);
 
         String idArray = CacheUtils.getString(context,READ_ARRAY_ID);
+        List<String> category = dataBean.getCatalog();
 
 //        LogUtil.e(idArray.contains(dataBean.getUniquekey())+"");
 
@@ -114,7 +116,7 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
             //获取数据重新赋值
             holder01.tv_title.setText(dataBean.getTitle());
             holder01.tv_author.setText(dataBean.getAuthor());
-            holder01.tv_category.setText(dataBean.getCatalog().toString());
+            holder01.tv_category.setText(category.get(0));
             holder01.tv_time.setText(dataBean.getPublished());
 
             //请求图片
@@ -149,7 +151,7 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
             //获取数据重新赋值
             holder02.tv_title.setText(dataBean.getTitle());
             holder02.tv_author.setText(dataBean.getAuthor());
-            holder02.tv_category.setText(dataBean.getCatalog().toString());
+            holder02.tv_category.setText(category.get(0));
             holder02.tv_time.setText(dataBean.getPublished());
 
             //请求图片
@@ -187,7 +189,7 @@ public class TabDetailPagerListAdapter extends BaseAdapter {
             //获取数据重新赋值
             holder03.tv_title.setText(dataBean.getTitle());
             holder03.tv_author.setText(dataBean.getAuthor());
-            holder03.tv_category.setText(dataBean.getCatalog().toString());
+            holder03.tv_category.setText(category.get(0));
             holder03.tv_time.setText(dataBean.getPublished());
 
             //请求图片

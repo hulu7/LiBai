@@ -42,8 +42,8 @@
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:id="@+id/ib_fontsize"
-            android:src="@drawable/font_size"
+            android:id="@+id/ib_collection"
+            android:src="@drawable/collection"
             android:layout_centerVertical="true"
             android:layout_marginLeft="8dp"
             android:background="@android:color/transparent"
@@ -52,8 +52,8 @@
             android:layout_height="wrap_content"/>
 
         <ImageButton
-            android:id="@+id/ib_collection"
-            android:src="@drawable/collection"
+            android:id="@+id/ib_fontsize"
+            android:src="@drawable/font_size"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
             android:background="@android:color/transparent"
