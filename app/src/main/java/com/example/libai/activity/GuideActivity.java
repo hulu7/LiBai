@@ -46,7 +46,7 @@ public class GuideActivity extends AppCompatActivity {
 
         //准备数据
         int[] ids = new int[]{
-                R.drawable.guild_1,
+//              R.drawable.guild_1,
                 R.drawable.guild_2,
                 R.drawable.guild_3,
         };

@@ -56,7 +56,7 @@ public class HomePager extends BasePager {
         ibTabNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+            viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
             }
         });
         tvTitle.setText("");
